@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>See What You Type</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>See What You Type</h1>
+      <textarea id="input" cols="30" rows="10" oninput="update()"></textarea>
+      <h3>Your Text :</h3>
+      <p id="output">Input Box Is Empty... Start Typing</p>
+    </div>
+  </body>
+  <script>
+    const textarea = document.querySelector("#input");
+    const output = document.querySelector("#output");
+
+    function update() {
+      textarea.value !== ""
+        ? (output.innerText = textarea.value)
+        : (output.innerText = "Input Box Is Empty... Start Typing");
+    }
+  </script>
+</html>

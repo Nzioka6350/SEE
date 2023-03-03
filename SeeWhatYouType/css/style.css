@@ -1,0 +1,23 @@
+body {
+    background-color: #2827cc;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+  }
+  
+  .container {
+    background-color: #fff;
+    padding: 50px 100px 50px 100px;
+    border-radius: 20px;
+  }
+  
+  h1 {
+    margin-bottom: 50px;
+    text-align: center;
+  }
+  
+  textarea {
+    width: 500px;
+  }
+  
